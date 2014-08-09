@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Quiet Please!",
+    "version": "0.0.2",
+
+    "description": "Shhh. quiet please! Makes the internet a quieter place by lowercasing content that is in ALL CAPS.",
+    "icons":{
+    	"48": "icon48.png",
+    	"128": "icon128.png"
+    },
+
+    "author": "https://github.com/thatneat",
+    "content_scripts": [{
+		"matches": ["<all_urls>"],
+	    "js": ["jquery-1.11.1.min.js", "main.js"],
+	    "run_at": "document_start",
+	    "all_frames": true
+    }],
+    "homepage_url": "http://github.com/thatneat/quiet-please"
+}
